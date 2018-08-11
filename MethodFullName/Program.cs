@@ -16,7 +16,10 @@ namespace MethodFullName
             string userNameLast = Console.ReadLine();
 
             //execute the method CombineNames with the parameters of userNameFirst and userNameLast
-            CombineNames(userNameFirst, userNameLast);
+            //initialize string nameFull (within Main) using this method and these parameters
+            string nameFull = CombineNames(userNameFirst, userNameLast);
+
+            Console.WriteLine(nameFull);
 
             //keep the program open until user hits enter or closes it
             Console.ReadLine();
@@ -28,8 +31,6 @@ namespace MethodFullName
         {
             //concatenate the strings
             string nameFull = nameFirst + " " + nameLast;
-            //print the result
-            Console.WriteLine(nameFull);
             //pass the result back outside these code brackets
             return nameFull;
 
